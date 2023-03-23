@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../formulariostyle.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <header>
+
+        <div class="descuentos">
+            20% de Descuento en todos los productos!
+        </div>
+
+        <div class="container-header">
+            <img src="../img/logo_tienda.png">
+            <h2>Nombre Tienda</h2>
+        </div>
+        <nav class="nav-top">
+            <ul>
+                <li>Contacto</li>
+                <li>Registrarme</li>
+                <li class="li3">Ingresar</li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <div class="main-container">
+
+            <div class="formulario">
+
+                <section class="titulo">
+                    <h1>Añadí tu super!</h1>
+                    <h4>Agregá tu personaje favorito completando las opciones.</h4>
+                </section>
+
+                <div class="container">
+                    <section class="box1">
+                        <form action="index.html">
+                            <label for="nombre">Nombre </label>
+                                <input type="text" name="nombre" id="nombre" required
+                                    placeholder="Gabriela"
+                                    minlength="5"
+                                    maxlength="20"
+                                    oninvalid="setCustomValidity('Por favor, completar correctamente')"/>
+                            
+                            <label for="nacimiento">Fecha de Nacimiento</label>
+                                <input type="date" name="nacimiento" id="nacimiento" value="1900-01-02" min="2023-03-15" required/>
+
+                                <label for="comentarios"></label>
+                                <textarea
+                                  name="comentarios"
+                                  id="comentarios"
+                                  cols="30"
+                                  rows="5"
+                                  placeholder="Mega visión, supermente, corazón ultra grande, supersonrisa, superoído, supermanos codeadoras."
+                                  required
+                                  minlength="5"
+                                  maxlength="20"
+                                ></textarea>
+                           
+                            
+                    </section>
+    
+                    <section class="box2">
+                        <label>Especie</label>
+                            <select name="nombre">
+                                <option value="1">Batman</option>
+                                <option value="2">Mujer maravilla</option>
+                                <option value="3">Superman</option>
+                                <option value="4">Harley Queen</option>
+                            </select>
+          
+                        <label for="imagen">Agregar Foto</label>
+                            <input
+                              type="file"
+                              name="imagen"
+                              id="imagen"
+                              accept=".jpeg, .png, .pdf"
+                              multiple
+                              placeholder="Seleccionar archivo" required/>
+
+                        <label for="poderes">Poderes</label>
+                            <input type="checkbox" id="poderes" name="poderes" value="Volar">
+                            <input type="checkbox" id="poderes" name="poderes" value="SuperInteligencia">
+                            <input type="checkbox" id="poderes" name="poderes" value="Vista de rayo láser">
+                            <input type="checkbox" id="poderes" name="poderes" value="Billetera gorda">
+                            
+                        <label for="personaje">Tipo de personaje</label>
+                        <input type="radio" id="personaje" name="personaje" value="Héroe / Heroina">
+                        <input type="radio" id="personaje" name="personaje" value="Villano / Villana">
+
+                        <button type="submit">Añadir</button>
+                            </form>
+                    </section>
+                </div>
+            </div>
+        </div>
+
+    </main>
+    <footer>
+        <div class="creditos">
+        <p>Todos los derechos reversados a FRONT END 1</p>
+        </div>
+    </footer>
+</body>
+</html>
